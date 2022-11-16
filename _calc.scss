@@ -29,7 +29,8 @@
     #Calc__Top__Input{
         background-color: transparent;
         // border: $testborder1;
-        border: 0;
+        border: solid 1px whitesmoke;
+        border-radius: 0.5rem;
         width: 100%;
         height: auto;
         font-size: 3rem;

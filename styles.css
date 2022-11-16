@@ -13,6 +13,12 @@ h1 {
   margin: 0.25rem;
 }
 
+.Calc__All__Buttons:hover {
+  cursor: pointer;
+  background-color: #c0c0d4;
+  color: black;
+}
+
 .Calc__All__Icons {
   color: aquamarine;
 }
@@ -43,7 +49,8 @@ h1 {
 }
 #Calc__Top #Calc__Top__Input {
   background-color: transparent;
-  border: 0;
+  border: solid 1px whitesmoke;
+  border-radius: 0.5rem;
   width: 100%;
   height: auto;
   font-size: 3rem;
