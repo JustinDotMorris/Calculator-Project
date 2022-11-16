@@ -2,12 +2,15 @@
 
 .Calc__All__Buttons{
     border: $testborder1;
+    background-color: transparent;
+    color: white;
+    
 }
 .Calc__Bot__All__ButtonShape{
     width:4rem;
     height:4rem;
 }
 .Calc__Bot__All__DoubleButtonShape{
-    width:10rem;
-    height:5rem;
+    width:8rem;
+    height:4rem;
 }

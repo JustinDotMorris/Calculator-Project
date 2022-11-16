@@ -1,5 +1,7 @@
 .Calc__All__Buttons {
   border: solid 3px red;
+  background-color: transparent;
+  color: white;
 }
 
 .Calc__Bot__All__ButtonShape {
@@ -8,26 +10,42 @@
 }
 
 .Calc__Bot__All__DoubleButtonShape {
-  width: 10rem;
-  height: 5rem;
+  width: 8rem;
+  height: 4rem;
 }
 
 #Calc {
   display: flex;
   flex-direction: column;
   border: solid 3px red;
+  width: 22rem;
+  justify-content: center;
+  background-color: #22252d;
 }
 
 #Calc__Top {
-  height: 15rem;
-  width: auto;
+  height: 12.5rem;
   border: solid 3px green;
+  margin: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 #Calc__Bot {
-  height: 25rem;
-  width: auto;
   border: solid 3px blue;
+  margin: 1rem 1rem 1rem 1rem;
+  border-radius: 1rem 1rem 0 0;
+  background-color: #292d36;
+}
+
+#Calc__Bot__All {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  border: solid 3px red;
 }
 
 * {
