@@ -2,27 +2,42 @@
 #Calc{
     display: flex;
     flex-direction: column;
-    border: $testborder1;
+    // border: $testborder1;
     width: 22rem;
     justify-content: center;
     background-color: $PrimaryBackgroundColour;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin: auto;
+}
+
+#Calc__LightDarkModeButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #Calc__Top{
     height: 12.5rem;
-    border: $testborder2;
+    // border: $testborder2;
     margin: 1rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
 
+    #Calc__Top__Input{
+        background-color: transparent;
+        border: 0;
+
+    }
 }
 
 #Calc__Bot{
-    border: $testborder3;
-    margin: 1rem 1rem 1rem 1rem;
+    // border: $testborder3;
+    // margin: 1rem 1rem 1rem 1rem;
     border-radius: 1rem 1rem 0 0;
+    width: 100%;
     background-color: $PrimaryBackgroundColour2;
 
 }
@@ -32,5 +47,5 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    border: $testborder1;
+    // border: $testborder1;
 }

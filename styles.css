@@ -1,42 +1,58 @@
 .Calc__All__Buttons {
-  border: solid 3px red;
-  background-color: transparent;
+  background-color: rgba(8, 8, 10, 0.1607843137);
   color: white;
-}
-
-.Calc__Bot__All__ButtonShape {
+  border: 0;
+  font-size: 2rem;
   width: 4rem;
   height: 4rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin: 0.25rem;
 }
 
-.Calc__Bot__All__DoubleButtonShape {
-  width: 8rem;
-  height: 4rem;
+.Calc__All__Icons {
+  color: aquamarine;
+}
+
+#Calc__LightDarkModeButtons {
+  background-color: black;
+}
+#Calc__LightDarkModeButtons .Calc__LightDarkModeButtons__Modes {
+  background-color: transparent;
+  border: 0;
 }
 
 #Calc {
   display: flex;
   flex-direction: column;
-  border: solid 3px red;
   width: 22rem;
   justify-content: center;
-  background-color: #22252d;
+  background-color: #191c22;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin: auto;
+}
+
+#Calc__LightDarkModeButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #Calc__Top {
   height: 12.5rem;
-  border: solid 3px green;
   margin: 1rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
 }
+#Calc__Top #Calc__Top__Input {
+  background-color: transparent;
+  border: 0;
+}
 
 #Calc__Bot {
-  border: solid 3px blue;
-  margin: 1rem 1rem 1rem 1rem;
   border-radius: 1rem 1rem 0 0;
+  width: 100%;
   background-color: #292d36;
 }
 
@@ -45,11 +61,16 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-  border: solid 3px red;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+main {
+  background-color: black;
+  height: auto;
+  width: auto;
 }/*# sourceMappingURL=styles.css.map */

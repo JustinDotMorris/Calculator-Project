@@ -1,16 +1,26 @@
 @use "./variables" as *;
 
 .Calc__All__Buttons{
-    border: $testborder1;
-    background-color: transparent;
-    color: white;
     
-}
-.Calc__Bot__All__ButtonShape{
+    background-color: #08080a29;
+    color: white;
+    border: 0;
+    font-size: 2rem;
     width:4rem;
     height:4rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin: 0.25rem;
 }
-.Calc__Bot__All__DoubleButtonShape{
-    width:8rem;
-    height:4rem;
+
+.Calc__All__Icons{
+    color: aquamarine;
 }
+
+#Calc__LightDarkModeButtons{
+    background-color: black;
+    .Calc__LightDarkModeButtons__Modes{
+        background-color: transparent;
+        border: 0;
+    }
+}
+
