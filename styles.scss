@@ -1,0 +1,13 @@
+@use "./variables" as *;
+@use "./text";
+@use "./colours";
+@use "./buttons";
+@use "./calc";
+@use "./topCalc";
+@use "./botCalc";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

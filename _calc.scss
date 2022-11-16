@@ -1,0 +1,20 @@
+@use "./variables" as *;
+#Calc{
+    display: flex;
+    flex-direction: column;
+    border: $testborder1;
+}
+
+#Calc__Top{
+    height: 15rem;
+    width: auto;
+    border: $testborder2;
+
+}
+
+#Calc__Bot{
+    height: 25rem;
+    width: auto;
+    border: $testborder3;
+
+}
