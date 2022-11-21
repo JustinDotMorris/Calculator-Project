@@ -14,16 +14,17 @@ console.log ("Hello World");
     let eightButton = document.querySelector("#eightButton");
     let nineButton = document.querySelector("#nineButton");
 
-//     //Operator ids
-//     const acButton = document.querySelector("#acButton");
-//     const plusMinusButton = document.querySelector("#plusMinusButton");
-//     const percentButton = document.querySelector("#percentButton");
-//     const divideButton = document.querySelector("#divideButton");
-//     const multiplyButton = document.querySelector("#multiplyButton");
-//     const minusButton = document.querySelector("#minusButton");
-//     const plusButton = document.querySelector("#plusButton");
-//     const dotButton = document.querySelector("#dotButton");
-//     const equalsButton = document.querySelector("#equalsButton");
+    //Operator ids
+    let acButton = document.querySelector("#acButton");
+    let plusMinusButton = document.querySelector("#plusMinusButton");
+    let percentButton = document.querySelector("#percentButton");
+    let divideButton = document.querySelector("#divideButton");
+    let multiplyButton = document.querySelector("#multiplyButton");
+    let minusButton = document.querySelector("#minusButton");
+    let plusButton = document.querySelector("#plusButton");
+    let dotButton = document.querySelector("#dotButton");
+    let equalsButton = document.querySelector("#equalsButton");
+    let backButton = document.querySelector("#backButton");
     //Input id
     let Calc__Top__Input = document.querySelector("#Calc__Top__Input")
 
@@ -32,67 +33,109 @@ console.log ("Hello World");
 //     const Calc__All__Buttons = document.querySelector(".Calc__All__Buttons");
 
 //--------------------------------------------------------------
+//Functions
+
+//Calculation Array
+const calculationArray = [];
+
+//Number functions
 
 const zeroButtonClickEvent = () => {
     zeroButton = "0";
-    Calc__Top__Input += zeroButton;
-    // console.log(zeroButton);
+    Calc__Top__Input.value += zeroButton;
 };
 
 const oneButtonClickEvent = () => {
     oneButton = "1";
-    // console.log(oneButton);
+    Calc__Top__Input.value += oneButton;
 };
 
 const twoButtonClickEvent = () => {
     twoButton = "2";
-    // console.log(twoButton);
+    Calc__Top__Input.value += twoButton;
 };
 
 const threeButtonClickEvent = () => {
     threeButton = "3";
-    console.log(threeButton);
+    Calc__Top__Input.value += threeButton;
 };
 
 const fourButtonClickEvent = () => {
     fourButton = "4";
-    console.log(fourButton);
+    Calc__Top__Input.value += fourButton;
 };
 
 const fiveButtonClickEvent = () => {
     fiveButton = "5";
-    console.log(fiveButton);
+    Calc__Top__Input.value += fiveButton;
 };
 
 const sixButtonClickEvent = () => {
     sixButton = "6";
-    console.log(sixButton);
+    Calc__Top__Input.value += sixButton;
 };
 
 const sevenButtonClickEvent = () => {
     sevenButton = "7";
-    console.log(sevenButton);
+    Calc__Top__Input.value += sevenButton;
 };
 
 const eightButtonClickEvent = () => {
     eightButton = "8";
-    console.log(eightButton);
+    Calc__Top__Input.value += eightButton;
 };
 
 const nineButtonClickEvent = () => {
     nineButton = "9";
-    console.log(nineButton);
+    Calc__Top__Input.value += nineButton;
 };
 
+//Button functions
+
+const acButtonClickEvent = () => {
+    Calc__Top__Input.value = null;
+};
+
+// const plusMinusButtonClickEvent = () => {
+
+// };
+
+// const percentButtonClickEvent = () => {
+
+// };
 
 
-//Functions
+const divideButtonClickEvent = () => {
+    divideButton = "/";
+    Calc__Top__Input.value += divideButton;
+};
 
-if (zeroButtonClickEvent) {
+const multiplyButtonClickEvent = () => {
+    multiplyButton = "×";
+    Calc__Top__Input.value += multiplyButton;
+};
 
-}
+const minusButtonClickEvent = () => {
+    minusButton  = "−";
+    Calc__Top__Input.value += minusButton;
+};
 
-const calculation = () => {
+const plusButtonClickEvent = () => {
+    plusButton = "+";
+    Calc__Top__Input.value += plusButton;
+};
+
+const dotButtonClickEvent = () => {
+    dotButton = ".";
+    Calc__Top__Input.value += dotButton;
+};
+
+const backButtonClickEvent = () => {
+    Calc__Top__Input = Calc__Top__Input.slice (0, -1);
+};
+
+const equalsButtonClickEvent = () => {
+    Calc__Top__Input.value = num1 + num2;
 
 };
 
@@ -108,16 +151,17 @@ sixButton.addEventListener("click",sixButtonClickEvent);
 sevenButton.addEventListener("click",sevenButtonClickEvent);
 eightButton.addEventListener("click",eightButtonClickEvent);
 nineButton.addEventListener("click",nineButtonClickEvent);
-// //Operator
-// acButton.addEventListener("click",acButtonClickEvent);
-// plusMinusButton.addEventListener("click",plusMinusButtonClickEvent);
-// percentButton.addEventListener("click",percentButtonClickEvent);
-// divideButton.addEventListener("click",divideButtonClickEvent);
-// multiplyButton.addEventListener("click",multiplyButtonClickEvent);
-// minusButton.addEventListener("click",minusButtonClickEvent);
-// plusButton.addEventListener("click",plusButtonClickEvent);
-// dotButton.addEventListener("click",dotButtonClickEvent);
-// equalsButton.addEventListener("click",equalsButtonClickEvent);
+//Operator
+acButton.addEventListener("click",acButtonClickEvent);
+plusMinusButton.addEventListener("click",plusMinusButtonClickEvent);
+percentButton.addEventListener("click",percentButtonClickEvent);
+divideButton.addEventListener("click",divideButtonClickEvent);
+multiplyButton.addEventListener("click",multiplyButtonClickEvent);
+minusButton.addEventListener("click",minusButtonClickEvent);
+plusButton.addEventListener("click",plusButtonClickEvent);
+dotButton.addEventListener("click",dotButtonClickEvent);
+equalsButton.addEventListener("click",equalsButtonClickEvent);
+backButton.addEventListener("click", backButtonClickEvent);
 
 
 
