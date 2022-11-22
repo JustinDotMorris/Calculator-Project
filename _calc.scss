@@ -2,7 +2,6 @@
 #Calc{
     display: flex;
     flex-direction: column;
-    // border: $testborder1;
     width: 22rem;
     justify-content: center;
     background-color: $PrimaryBackgroundColour;
@@ -14,12 +13,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #Calc__Top{
     height: 12.5rem;
-    // border: $testborder2;
     margin: 1rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
@@ -28,7 +25,6 @@
 
     #Calc__Top__Input{
         background-color: transparent;
-        // border: $testborder1;
         border: solid 1px whitesmoke;
         border-radius: 0.5rem;
         width: 100%;
@@ -40,13 +36,10 @@
 }
 
 #Calc__Bot{
-    // border: $testborder3;
-    // margin: 1rem 1rem 1rem 1rem;
     border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
     width: 100%;
     background-color: $PrimaryBackgroundColour2;
     padding: 1rem 0 1rem 0;
-
 }
 
 #Calc__Bot__All{
@@ -54,5 +47,4 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    // border: $testborder1;
 }

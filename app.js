@@ -1,5 +1,3 @@
-//JS test
-console.log ("Hello World");
 //------------------------------------------------------------
 //Ids
     //Number ids
@@ -28,18 +26,14 @@ console.log ("Hello World");
     //Input id
     let Calc__Top__Input = document.querySelector("#Calc__Top__Input")
 
-// //Classes
-//     //All buttons
-//     const Calc__All__Buttons = document.querySelector(".Calc__All__Buttons");
+    //Variables
+    let inputNum1 = 0;
+    let inputNum2 = 0;
 
 //--------------------------------------------------------------
 //Functions
 
-//Calculation Array
-const calculationArray = [];
-
 //Number functions
-
 const zeroButtonClickEvent = () => {
     zeroButton = "0";
     Calc__Top__Input.value += zeroButton;
@@ -96,15 +90,6 @@ const acButtonClickEvent = () => {
     Calc__Top__Input.value = null;
 };
 
-// const plusMinusButtonClickEvent = () => {
-
-// };
-
-// const percentButtonClickEvent = () => {
-
-// };
-
-
 const divideButtonClickEvent = () => {
     divideButton = "/";
     Calc__Top__Input.value += divideButton;
@@ -121,6 +106,8 @@ const minusButtonClickEvent = () => {
 };
 
 const plusButtonClickEvent = () => {
+    inputNum1 = (Calc__Top__Input.innertext);
+    Calc__Top__Input.value = "+";
     plusButton = "+";
     Calc__Top__Input.value += plusButton;
 };
@@ -136,6 +123,13 @@ const backButtonClickEvent = () => {
 
 const equalsButtonClickEvent = () => {
     Calc__Top__Input.value = num1 + num2;
+};
+
+const plusMinusButtonClickEvent = () => {
+    
+};
+
+const percentButtonClickEvent = () => {
 
 };
 
